@@ -1,0 +1,17 @@
+.ccx-inline {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  border: 1px solid #c6e7d0;
+  background: #eef8f1;
+  color: #0b6b2f;
+  font-size: 0.85em;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.offer-price__currency[data-ccx-processed="1"] {
+  font-size: 0.5em;
+}
+

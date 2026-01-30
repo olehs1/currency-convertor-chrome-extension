@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Currency Convertor",
+  "version": "0.1.0",
+  "description": "Shows converted currency values next to prices.",
+  "icons": {
+    "16": "src/assets/icons/icon_16x16.png",
+    "32": "src/assets/icons/icon_32x32.png",
+    "48": "src/assets/icons/icon_48x48.png",
+    "128": "src/assets/icons/icon_128x128.png"
+  },
+  "action": {
+    "default_popup": "src/popup/index.html",
+    "default_title": "Currency Convertor",
+    "default_icon": {
+      "16": "src/assets/icons/icon_16x16.png",
+      "32": "src/assets/icons/icon_32x32.png",
+      "48": "src/assets/icons/icon_48x48.png",
+      "128": "src/assets/icons/icon_128x128.png"
+    }
+  },
+  "background": {
+    "service_worker": "src/background.ts",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.tsx"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["https://api.frankfurter.app/*"]
+}
+
+
