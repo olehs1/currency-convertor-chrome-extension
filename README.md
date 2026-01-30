@@ -3,6 +3,13 @@
 Detects prices on any webpage and shows conversions between USD, EUR, and PLN.
 Built with TypeScript, React, and Chrome Manifest V3.
 
+## Screenshots
+<p align="center">
+  <img src="docs/screenshots/price-card-1.png" alt="Converted price shown on listing card" width="260" />
+  <img src="docs/screenshots/price-card-2.png" alt="Converted price with high price indicator" width="260" />
+  <img src="docs/screenshots/price-card-3.png" alt="Converted PLN to EUR and USD" width="260" />
+</p>
+
 ## Features
 - Auto-detects USD, EUR, and PLN by symbol or code.
 - Injects conversions next to detected prices on the page.
